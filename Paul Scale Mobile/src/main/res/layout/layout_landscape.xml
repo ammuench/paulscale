@@ -13,5 +13,6 @@
         android:text="@string/scale4"
         android:id="@+id/fs_textView"
         android:gravity="center"
-        android:textSize="48dp" />
+        android:textSize="68dp"
+        android:textStyle="bold" />
 </LinearLayout>

@@ -24,21 +24,6 @@ public class MainActivity extends Activity implements View.OnClickListener, View
     private RelativeLayout mainLayout;
     private TextView scale0, scale1, scale2, scale3, scale4, scale5, scale6, scale7, scale8, scale9;
 
-//    @Override
-//    protected void onSaveInstanceState(Bundle outState) {
-//        System.out.println("saved instance state");
-//        super.onSaveInstanceState(outState);
-//        outState.putInt("scaleVal", prevClick);
-//    }
-//
-//    @Override
-//    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-//        System.out.println("restored instance state");
-//        super.onRestoreInstanceState(savedInstanceState);
-//        onClick((View)findViewById(savedInstanceState.getInt("scaleVal")));
-//
-//    }
-
     private TextView lastSelectedScale;
 
     @Override
@@ -68,6 +53,7 @@ public class MainActivity extends Activity implements View.OnClickListener, View
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //portrait mode initialization code
         if (getResources().getConfiguration().orientation ==
                 Configuration.ORIENTATION_PORTRAIT) {
             setContentView(R.layout.activity_main);
@@ -124,13 +110,24 @@ public class MainActivity extends Activity implements View.OnClickListener, View
             {
                 Log.d("ON_RESUME", "NoView");
             }
+        //landscape initialization code
         } else {
             setContentView(R.layout.layout_landscape);
-            TextView l_fullText = (TextView) findViewById(R.id.fs_textView);
             SharedPreferences saveState = getPreferences(MODE_PRIVATE);
-            l_fullText.setText(saveState.getString("oldText", null));
+            TextView l_fullText = (TextView) findViewById(R.id.fs_textView);
             LinearLayout l_layout = (LinearLayout) findViewById(R.id.l_layout);
-            l_layout.setBackgroundColor(saveState.getInt("oldColor", 0));
+            String oldText = saveState.getString("oldText", null);
+
+            if (!(oldText.equals("IT'S OVER")))
+            {
+                System.out.println(oldText);
+                l_fullText.setText(oldText);
+                l_layout.setBackgroundColor(saveState.getInt("oldColor", 0));
+            }else{
+                l_fullText.setText("IT\'S OVER");
+                l_fullText.setTextColor(Color.WHITE);
+                l_layout.setBackgroundColor(saveState.getInt("oldColor", 0));
+            }
         }
     }
 

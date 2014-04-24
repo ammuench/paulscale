@@ -10,4 +10,5 @@
     <color name="scale7">#ff0000</color>
     <color name="scale8">#cc0000</color>
     <color name="scale9">#000000</color>
+    <color name="scale9text">#FFFFFF</color>
 </resources>
