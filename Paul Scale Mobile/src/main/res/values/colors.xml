@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="scale0">#99fe36</color>
+    <color name="scale1">#01b0f1</color>
+    <color name="scale2">#0170c1</color>
+    <color name="scale3">#fffe03</color>
+    <color name="scale4">#ffcc00</color>
+    <color name="scale5">#F5984A</color>
+    <color name="scale6">#E26C0A</color>
+    <color name="scale7">#ff0000</color>
+    <color name="scale8">#cc0000</color>
+    <color name="scale9">#000000</color>
+</resources>

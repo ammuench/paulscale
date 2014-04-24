@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/layout"
+    tools:context="com.amuenchapps.paulscalemobile.MainActivity"
+    android:background="#ff717171">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:orientation="vertical"
+        android:background="#99fe36"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/scale9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale9"
+            android:text="@string/scale9"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/scale8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale8"
+            android:gravity="center"
+            android:text="@string/scale8"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/scale7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale7"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="@string/scale7" />
+        <TextView
+            android:id="@+id/scale6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale6"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="@string/scale6" />
+        <TextView
+            android:id="@+id/scale5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale5"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="@string/scale5" />
+        <TextView
+            android:id="@+id/scale4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale4"
+            android:gravity="center"
+            android:text="@string/scale4"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/scale3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale3"
+            android:gravity="center"
+            android:text="@string/scale3"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/scale2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale2"
+            android:gravity="center"
+            android:text="@string/scale2"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/scale1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale1"
+            android:gravity="center"
+            android:text="@string/scale1"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/scale0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:background="@color/scale0"
+            android:gravity="center"
+            android:text="@string/scale0"
+            android:textColor="#000000" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

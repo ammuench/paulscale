@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Paul Scale Mobile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="test">#FFFFFF</string>
+    <string name="scale0">IT HASN\'T EVEN BEGUN</string>
+    <string name="scale1">IT BEGINS</string>
+    <string name="scale2">YOU DIDN\'T LISTEN</string>
+    <string name="scale3">WHY DIDN\'T YOU LISTEN?</string>
+    <string name="scale4">YOU COULD HAVE PREVENTED THIS</string>
+    <string name="scale5">YOU ASKED FOR THIS</string>
+    <string name="scale6">YOU CAN\'T STOP THIS</string>
+    <string name="scale7">IT\'S TOO LATE</string>
+    <string name="scale8">IT\'S HAPPENING</string>
+    <string name="scale9">IT\'S OVER</string>
+
+
+</resources>
