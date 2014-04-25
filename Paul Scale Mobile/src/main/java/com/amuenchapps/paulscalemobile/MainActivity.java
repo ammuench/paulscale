@@ -38,7 +38,7 @@ public class MainActivity extends Activity implements View.OnClickListener, View
         // Store values between instances here
         SharedPreferences saveState = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = saveState.edit();  // Put the values from the UI
-        System.out.println("Pausing, prevClick val = " + prevClick);
+//        System.out.println("Pausing, prevClick val = " + prevClick);
         if (prevClick != 0) {
             View colorView = findViewById(prevClick);
             int savedColor = ((ColorDrawable)colorView.getBackground()).getColor();
@@ -54,8 +54,8 @@ public class MainActivity extends Activity implements View.OnClickListener, View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //portrait mode initialization code
-        if (getResources().getConfiguration().orientation ==
-                Configuration.ORIENTATION_PORTRAIT) {
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+        {
             setContentView(R.layout.activity_main);
             scale0 = (TextView) findViewById(R.id.scale0);
             scale1 = (TextView) findViewById(R.id.scale1);
@@ -120,7 +120,6 @@ public class MainActivity extends Activity implements View.OnClickListener, View
 
             if (!(oldText.equals("IT'S OVER")))
             {
-                System.out.println(oldText);
                 l_fullText.setText(oldText);
                 l_layout.setBackgroundColor(saveState.getInt("oldColor", 0));
             }else{

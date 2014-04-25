@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Paul Scale Mobile/Paul Scale Mobile.iml" filepath="$PROJECT_DIR$/Paul Scale Mobile/Paul Scale Mobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaulScaleMobile.iml" filepath="$PROJECT_DIR$/PaulScaleMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paulscale.iml" filepath="$PROJECT_DIR$/paulscale.iml" />
     </modules>
   </component>
 </project>
